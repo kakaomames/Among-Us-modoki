@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Among Us シミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-area">
+        <img id="map" src="assets/map.png" alt="宇宙船マップ">
+        <div id="player"></div>
+        <div id="dead-body" class="hidden"></div>
+    </div>
+    
+    <div id="info-panel">
+        <p>現在地: <span id="current-room">Loading...</span></p>
+        <p id="event-message"></p>
+        <button id="task-button" class="hidden">タスクを実行</button>
+        <button id="report-button" class="hidden">死体を報告</button>
+    </div>
+
+    <div id="joystick-container">
+        <div id="joystick-base"></div>
+        <div id="joystick-thumb"></div>
+    </div>
+
+    <div id="meeting-screen" class="hidden">
+        <h2>緊急会議！</h2>
+        <p id="meeting-timer">残り時間: 5分</p>
+        <div id="player-list">
+            </div>
+        <button id="skip-vote-button">投票をスキップ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
